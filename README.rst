@@ -7,7 +7,9 @@ Django Wikidata Interlink is a simple Django app to retrieve information about a
 Requirements
 ------------
 
-* .. _Requests: https://2.python-requests.org/en/master/
+* Requests_
+
+.. _Requests: https://2.python-requests.org/en/master/
 
 Install
 -------
