@@ -9,6 +9,15 @@ Requirements
 
 * .. _Requests: https://2.python-requests.org/en/master/
 
+Install
+-------
+
+1. Add to requirements.txt this line::
+
+    -e git+https://github.com/chirale/django-wikidata-interlink.git#egg=django-wikidata-interlink
+
+2. ``pip install -r requirements.txt``
+
 Quick start
 -----------
 
@@ -19,15 +28,15 @@ Quick start
         'wikidata_interlink',
     ]
 
-2. Add to settings the label languages, e.g.::
+2. Add to settings the label languages (order is relevant), e.g.::
 
     WIKIDATA_INTERLINK_LANGUAGES = ['it', 'en']
 
-3. Run `python manage.py migrate` to create the wikidata_interlink models.
+3. Run ``python manage.py migrate`` to create the wikidata_interlink models.
 
 4. Visit the admin page and add a new Wikidata element filling the Keyword field with something like "Earth" or a person name.
 
-5. Q, url and img will be autofilled with data retrieved from wikidata. It will be saved one Label for every language specified in settings.WIKIDATA_INTERLINK_LANGUAGE.
+5. Q, url and img will be autofilled with data retrieved from wikidata. It will be saved one Label for every language specified in settings.WIKIDATA_INTERLINK_LANGUAGES.
 
 Labels
 ------
